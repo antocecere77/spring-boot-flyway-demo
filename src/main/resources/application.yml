@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    password: password
+    url: jdbc:mysql://127.0.0.1:3306/beerservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: beer_service
+  flyway:
+    baseline-on-migrate: true
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
